@@ -16,4 +16,5 @@ RUN \
 	qca-qt6-devel qca-qt6-ossl \
 	ffmpeg-devel \
 	cyrus-sasl-devel \
-	openldap-devel
+	openldap-devel && \
+	dnf clean -y

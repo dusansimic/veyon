@@ -18,7 +18,8 @@ jobs:
         id: metadata
         uses: docker/metadata-action@v5
         with:
-          image: ${{ env.REGISTRY }}/ci.linux.${{ matrix.dist }}
+          images: |
+            ${{ env.REGISTRY }}/ci.linux.${{ matrix.dist }}
 
       - name: Login to registry
         uses: docker/login-action@v3
