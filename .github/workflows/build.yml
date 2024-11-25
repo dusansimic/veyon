@@ -5,10 +5,7 @@ jobs:
     strategy:
       matrix:
         dist:
-          - debian.12
-          - fedora.40
-          - opensuse.tumbleweed
-          - ubuntu.24.04
+          - fedora.41
     runs-on: ubuntu-latest
     container: veyon/ci.linux.${{matrix.dist}}
     steps:
