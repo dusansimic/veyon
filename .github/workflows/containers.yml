@@ -1,6 +1,9 @@
 name: "CI Container builds"
 
-on: [push, workflow_dispatch]
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 10 * * 1
 
 jobs:
   build-container:
