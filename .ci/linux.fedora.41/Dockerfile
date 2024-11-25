@@ -17,4 +17,4 @@ RUN \
 	ffmpeg-devel \
 	cyrus-sasl-devel \
 	openldap-devel && \
-	dnf clean -y
+	dnf -y clean all
