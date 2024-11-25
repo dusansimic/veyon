@@ -1,5 +1,5 @@
 name: "CI Builds"
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
   build-linux:
     strategy:
